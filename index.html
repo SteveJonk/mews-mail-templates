@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+      /* Enhancements for larger screens */
+      @media only screen and (min-width: 600px) {
+        .responsive-table {
+          width: 600px !important;
+        }
+        .stack-column {
+          display: table-cell !important;
+          width: 50% !important;
+        }
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <table class="responsive-table" style="width: 100%">
+      <tr>
+        <td class="stack-column" style="display: block; width: 100%">Column 1</td>
+        <td class="stack-column" style="display: block; width: 100%">Column 2</td>
+      </tr>
+    </table>
+  </body>
+</html>
