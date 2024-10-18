@@ -3,25 +3,230 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
     <style type="text/css">
+      body {
+        --yellow: #f9d633;
+        --blue: #8bd7fd;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 16px;
+        background-color: #8bd7fd;
+        font-weight: 400;
+        line-height: 23px;
+      }
       /* Only responsive styles  */
       @media only screen and (min-width: 600px) {
-        .responsive-table {
-          width: 600px !important;
-        }
         .stack-column {
           display: table-cell !important;
           width: 50% !important;
+        }
+        .show-desktop {
+          display: block !important;
         }
       }
     </style>
     <title>Confirmation Mail</title>
   </head>
   <body>
-    <table class="responsive-table" style="width: 100%">
+    <table
+      class="responsive-table"
+      style="
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 5px 10px;
+        border-spacing: 0;
+      "
+    >
       <tr>
-        <td class="stack-column" style="display: block; width: 100%">Column 1</td>
-        <td class="stack-column" style="display: block; width: 100%">Column 2</td>
+        <td style="display: block; width: 100%; padding: 10px">
+          <img
+            src="https://www.hostelroots.nl/wp-content/uploads/2024/10/Cropped-Hostel-Roots-Tilburg-logo.png"
+            alt="Logo"
+            height="70"
+            width="172"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td
+          class="stack-column"
+          style="
+            box-sizing: border-box;
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #f9d633;
+          "
+        >
+          <h2 style="text-align: center">W<u>OO</u>HOO</h2>
+          <p style="text-align: center">
+            You’ve made a reservation. Thank you for booking with Hostel Roots for your
+            upcoming trip to Tilburg!
+          </p>
+        </td>
+
+        <td
+          class="stack-column"
+          style="box-sizing: border-box; display: block; width: 100%; padding: 0"
+        >
+          <img
+            src="https://www.hostelroots.nl/wp-content/uploads/2024/10/Front-Sunny.jpg"
+            alt="Front of Hostel Roots"
+            style="width: 100%; margin: 0; padding: 0; display: block"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td
+          class="stack-column"
+          colspan="2"
+          style="box-sizing: border-box; display: block; width: 100%; padding: 0"
+        >
+          <img
+            class="show-desktop"
+            src="https://www.hostelroots.nl/wp-content/uploads/2024/10/CroppedAutumSunsetViewMusicTextielRoomHostelRoots-scaled-1.jpg"
+            alt="Sunset Tilburg"
+            style="width: 100%; margin: 0; padding: 0; display: none"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td
+          class="stack-column"
+          colspan="2"
+          style="box-sizing: border-box; display: block; width: 100%; padding: 0"
+        >
+          <div style="margin-top: 40px">
+            <h2 style="text-align: center">YOUR B<u>OO</u>KING DETAILS</h2>
+            <hr
+              style="border: none; border-top: 1px solid black; margin-bottom: 20px"
+            />
+            {reservationDetailsHtml}
+            <p
+              style="
+                margin-top: 30px;
+                text-align: center;
+                background-color: #f9d633;
+                padding: 15px 20px;
+              "
+            >
+              Please note that we do ask for a deposit of €20 for each guest. This can
+              be done via a pre-authorization with your credit card or in exact cash.
+              Which will be returned or canceled when you check- out.
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td
+          class="stack-column"
+          colspan="2"
+          style="box-sizing: border-box; display: block; width: 100%; padding: 0"
+        >
+          <img
+            class="show-desktop"
+            src="https://www.hostelroots.nl/wp-content/uploads/2024/10/CroopedRoots-LivingRoom.jpg"
+            alt="Living Room Hostel Roots"
+            style="width: 100%; margin: 0; padding: 0; display: none"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td
+          class="stack-column"
+          colspan="2"
+          style="box-sizing: border-box; display: block; width: 100%; padding: 0"
+        >
+          <h2 style="text-align: center; margin-top: 40px">
+            LET’S GET INTO THE M<u>OO</u>D
+          </h2>
+          <p style="text-align: center; margin-bottom: 40px">
+            Allright, it's time to get excited for this upcoming trip. Whether you ́re
+            here for an event, for leisure, a business trip or a couples weekend away;
+            You’ve chosen the best place to stay. To make your stay memorable, we want
+            to share some extra information about Hostel Roots & Tilburg.
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td
+          class="stack-column"
+          style="
+            box-sizing: border-box;
+            display: block;
+            width: 100%;
+            padding: 10px 15px;
+            background-color: #f9d633;
+          "
+        >
+          <h2 style="text-align: center">CHECK-IN ONLINE</h2>
+          <p style="text-align: center">
+            🕓 48 hours before arrival, we will sent you a link to speed up the process
+            at check-in & you can add extras to your stay
+          </p>
+        </td>
+
+        <td
+          class="stack-column"
+          style="
+            box-sizing: border-box;
+            display: block;
+            width: 100%;
+            padding: 10px 15px;
+          "
+        >
+          <h2 style="text-align: center">TRANSPORT</h2>
+          <p style="text-align: center">
+            🅿️ A secure parking spot at Roots is €15,- per night per car <br /><br />
+            🚉 Central Train Station is just a 2 min walk from us <br />
+            <br />
+            🚲 You can rent a bike to discover the city for a full Dutch experience
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td
+          class="stack-column"
+          style="
+            box-sizing: border-box;
+            display: block;
+            width: 100%;
+            padding: 10px 15px;
+          "
+        >
+          <h2 style="text-align: center">BREAKFAST & BAR</h2>
+          <p style="text-align: center">
+            🍷 After check-in a drink can be ordered in our basement bar <br />
+            <br />
+            ☕ And after a good (or maybe short ;-) night will have a fresh coffee ready
+            for you
+          </p>
+        </td>
+
+        <td
+          class="stack-column"
+          style="
+            box-sizing: border-box;
+            display: block;
+            width: 100%;
+            padding: 10px 15px;
+            background-color: #f9d633;
+          "
+        >
+          <h2 style="text-align: center">LATE CHECKOUT</h2>
+          <p style="text-align: center">
+            🛏️ Enjoy our comfy beds a bit longer and book a late checkout 🕐 just €15,-
+            per private room / €5,- pp in a shared room <br /><br />
+
+            <em>Late check-out at 1pm instead of 11am</em>
+          </p>
+        </td>
       </tr>
     </table>
   </body>
