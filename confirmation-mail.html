@@ -41,8 +41,8 @@
         }
 
         .map-text {
-          margin-top: 0 !important;
           margin-left: 10px !important;
+          max-width: 40%;
         }
       }
     </style>
@@ -152,7 +152,7 @@
                   margin: 20px auto;
                   box-shadow: 5px 5px 0 black;
                 "
-                href="{signInUrlz}"
+                href="{signInUrl}"
                 >Add your info</a
               >
               🕓 Don't want to do it now? No worries, 48 hours before arrival, we will
@@ -295,6 +295,67 @@
       <tr>
         <td
           class="stack-column"
+          style="
+            box-sizing: border-box;
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #f9d633;
+          "
+        >
+          <h2 style="text-align: center">EXPLORE TILBURG</h2>
+          <p style="text-align: center">
+            Unlock the best of Tilburg with our smart city guide. Get personalized tips
+            for top restaurants, must-visit museums, and unique activities tailored just
+            for you.
+          </p>
+          <a
+            style="
+              background-color: white;
+              font-size: 18px;
+              font-weight: 500;
+              color: black;
+              text-decoration: none;
+              padding: 5px 10px;
+              display: block;
+              width: fit-content;
+              margin: 20px auto;
+              box-shadow: 5px 5px 0 black;
+            "
+            href="https://app.mapsuntold.io/hostel-roots/"
+            >Start Exploring Now</a
+          >
+        </td>
+
+        <td
+          class="stack-column"
+          style="
+            box-sizing: border-box;
+            display: block;
+            width: 100%;
+            border: 2px solid #f9d633;
+            padding: 0;
+          "
+        >
+          <img
+            src="https://www.mapsuntold.io/wp-content/uploads/2024/11/26-FNS-1.jpg"
+            width="100"
+            height="100"
+            style="
+              margin: 0 auto;
+              display: block;
+              height: 100%;
+              width: 100%;
+              padding: 0;
+              object-fit: cover;
+              min-height: 260px;
+            "
+          />
+        </td>
+      </tr>
+      <tr>
+        <td
+          class="stack-column"
           colspan="2"
           style="
             box-sizing: border-box;
@@ -318,7 +379,6 @@
             background-color: #f9d633;
           "
         >
-          <h2>HOW TO FIND US?</h2>
           <a
             href="https://maps.app.goo.gl/4PF9ZJFZFSVRcrGh7"
             target="_blank"
@@ -331,36 +391,33 @@
               style="width: 100%; margin: 0; padding: 0; display: block"
             />
           </a>
-          <p
-            class="map-text"
-            style="
-              display: inline-block;
-              vertical-align: top;
-              font-size: 18px;
-              max-width: 40%;
-            "
-          >
-            Hostel Roots <br />
-            Stationsstraat 41 <br />
-            5038 EC Tilburg <br />
-            <a
-              style="color: black"
-              href="https://maps.app.goo.gl/4PF9ZJFZFSVRcrGh7"
-              target="_blank"
-              >Google Maps</a
-            >
-            <br /><br />
-            Parking Roots <br />
-            Noordstraat 78-80 <br />
-            It's a very narrow gate <br />
-            Parking at Roots is €15,- per car per night. <br />
-            <a
-              style="color: black"
-              href="https://maps.app.goo.gl/P2B8QFnfNEZuGKYE7"
-              target="_blank"
-              >Google Maps</a
-            >
-          </p>
+          <div class="map-text" style="display: inline-block; vertical-align: top">
+            <h2 style="display: inline-block; margin-bottom: 5px; margin-top: 10px">
+              HOW TO FIND US?
+            </h2>
+            <p style="display: inline-block; font-size: 18px">
+              Hostel Roots <br />
+              Stationsstraat 41 <br />
+              5038 EC Tilburg <br />
+              <a
+                style="color: black"
+                href="https://maps.app.goo.gl/4PF9ZJFZFSVRcrGh7"
+                target="_blank"
+                >Google Maps</a
+              >
+              <br /><br />
+              Parking Roots <br />
+              Noordstraat 78-80 <br />
+              It's a very narrow gate <br />
+              Parking at Roots is €15,- per car per night. <br />
+              <a
+                style="color: black"
+                href="https://maps.app.goo.gl/P2B8QFnfNEZuGKYE7"
+                target="_blank"
+                >Google Maps</a
+              >
+            </p>
+          </div>
         </td>
       </tr>
       <tr>
@@ -375,7 +432,7 @@
           "
         >
           <div>
-            <h2 style="margin-top: 30px">
+            <h2 style="margin-top: 30px; text-align: center">
               STAYING AT OUR MOST SUSTAINABLE HOTEL R<u>OO</u>M
             </h2>
           </div>
